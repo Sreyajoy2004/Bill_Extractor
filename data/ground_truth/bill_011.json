@@ -1,0 +1,13 @@
+{
+  "image_name": "bill_011.jpg",
+  "vendor_name": "Sai Mart",
+  "invoice_number": "INV-7817-691",
+  "date": "30/07/2026",
+  "total_amount": 468.48,
+  "currency": "INR",
+  "gst_amount": 102.48,
+  "gst_rate": 28,
+  "items_count": 2,
+  "payment_method": "Card",
+  "source": "synthetic_handwritten"
+}

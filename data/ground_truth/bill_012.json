@@ -1,0 +1,13 @@
+{
+  "image_name": "bill_012.jpg",
+  "vendor_name": "Sai Electronics",
+  "invoice_number": "INV-5589-774",
+  "date": "17/07/2026",
+  "total_amount": 358.4,
+  "currency": "INR",
+  "gst_amount": 38.4,
+  "gst_rate": 12,
+  "items_count": 2,
+  "payment_method": "UPI",
+  "source": "synthetic_handwritten"
+}

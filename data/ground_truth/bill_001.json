@@ -1,0 +1,13 @@
+{
+  "image_name": "bill_001.jpg",
+  "vendor_name": "Sai Electronics",
+  "invoice_number": "INV-4067-205",
+  "date": "27/07/2026",
+  "total_amount": 673.28,
+  "currency": "INR",
+  "gst_amount": 147.28,
+  "gst_rate": 28,
+  "items_count": 4,
+  "payment_method": "Card",
+  "source": "synthetic_handwritten"
+}

@@ -1,0 +1,80 @@
+==========================================================================================
+MULTI-MODEL COMPARISON REPORT
+==========================================================================================
+Generated: 2026-08-02 13:39:39
+Models compared: 5
+
+PER-FIELD ACCURACY COMPARISON
+------------------------------------------------------------------------------------------
+Model                     Provider     vendor_name     invoice_number  date            total_amount    currency        gst_amount      gst_rate        Overall   
+------------------------------------------------------------------------------------------
+llama-3.3-70b-versatile   groq          100.0%          6.7%         60.0%          6.7%        100.0%         13.3%          6.7%         41.9%
+llama-3.1-8b-instant      groq          100.0%          6.7%         60.0%          0.0%        100.0%         20.0%          6.7%         41.9%
+claude-3-haiku-20240307   anthropic       0.0%          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%
+gpt-4o-2024-08-06         openai          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%
+gemini-2.0-flash          google          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%          0.0%
+------------------------------------------------------------------------------------------
+
+COST ANALYSIS
+------------------------------------------------------------------------------------------
+  llama-3.3-70b-versatile  
+    Input tokens:  0
+    Output tokens: 0
+    Total tokens:  0
+    Cost per 1k:   $0.000000
+    Est. total:    $0.0000
+
+  llama-3.1-8b-instant     
+    Input tokens:  0
+    Output tokens: 0
+    Total tokens:  0
+    Cost per 1k:   $0.000000
+    Est. total:    $0.0000
+
+  claude-3-haiku-20240307  
+    Input tokens:  0
+    Output tokens: 0
+    Total tokens:  0
+    Cost per 1k:   $0.000250
+    Est. total:    $0.0000
+
+  gpt-4o-2024-08-06        
+    Input tokens:  0
+    Output tokens: 0
+    Total tokens:  0
+    Cost per 1k:   $0.005000
+    Est. total:    $0.0000
+
+  gemini-2.0-flash         
+    Input tokens:  0
+    Output tokens: 0
+    Total tokens:  0
+    Cost per 1k:   $0.000075
+    Est. total:    $0.0000
+
+SUCCESS RATES
+------------------------------------------------------------------------------------------
+  llama-3.3-70b-versatile   15/15 (100.0%)
+  llama-3.1-8b-instant      15/15 (100.0%)
+  claude-3-haiku-20240307   0/15 (0.0%)
+  gpt-4o-2024-08-06         0/15 (0.0%)
+  gemini-2.0-flash          0/15 (0.0%)
+
+==========================================================================================
+RECOMMENDATION
+==========================================================================================
+Best performing model: llama-3.3-70b-versatile (groq)
+Overall accuracy: 41.9%
+Successful extractions: 15/15
+
+Strengths:
+  - vendor_name: 100.0%
+  - currency: 100.0%
+
+Weaknesses:
+  - invoice_number: 6.7%
+  - total_amount: 6.7%
+  - gst_amount: 13.3%
+  - gst_rate: 6.7%
+
+==========================================================================================

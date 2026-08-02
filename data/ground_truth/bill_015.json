@@ -1,0 +1,13 @@
+{
+  "image_name": "bill_015.jpg",
+  "vendor_name": "Selvi Bakery",
+  "invoice_number": "INV-3410-812",
+  "date": "09/07/2026",
+  "total_amount": 538.0,
+  "currency": "INR",
+  "gst_amount": 0.0,
+  "gst_rate": 0,
+  "items_count": 2,
+  "payment_method": "Card",
+  "source": "synthetic_handwritten"
+}

@@ -1,0 +1,13 @@
+{
+  "image_name": "bill_003.jpg",
+  "vendor_name": "Sai Mart",
+  "invoice_number": "INV-9922-523",
+  "date": "07/07/2026",
+  "total_amount": 481.28,
+  "currency": "INR",
+  "gst_amount": 105.28,
+  "gst_rate": 28,
+  "items_count": 3,
+  "payment_method": "Bank Transfer",
+  "source": "synthetic_handwritten"
+}

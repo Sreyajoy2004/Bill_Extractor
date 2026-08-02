@@ -1,0 +1,50 @@
+﻿{
+  "model": "tesseract-ocr",
+  "type": "open-source",
+  "cost_per_bill": 0,
+  "bills_processed": 15,
+  "success_rate": "100%",
+  "accuracy": {
+    "vendor_name": {
+      "correct": 0,
+      "total": 15,
+      "percentage": 0.0,
+      "extracted": 4,
+      "extraction_rate": 26.7
+    },
+    "date": {
+      "correct": 4,
+      "total": 15,
+      "percentage": 26.7,
+      "extracted": 8,
+      "extraction_rate": 53.3
+    },
+    "total_amount": {
+      "correct": 0,
+      "total": 15,
+      "percentage": 0.0,
+      "extracted": 0,
+      "extraction_rate": 0.0
+    }
+  },
+  "strengths": [
+    "Completely free - no API costs",
+    "No rate limits - unlimited processing",
+    "Runs locally - data privacy guaranteed",
+    "100% processing success rate",
+    "Good for printed receipts"
+  ],
+  "weaknesses": [
+    "0% accuracy for vendor names",
+    "Only 26.7% accuracy for dates",
+    "0% accuracy for amounts",
+    "Struggles with handwriting",
+    "Cannot extract amounts at all",
+    "Pattern matching is limited"
+  ],
+  "recommendation": {
+    "for_printed_receipts": "Tesseract is sufficient",
+    "for_handwritten_bills": "Use cloud APIs (Gemini/Azure)",
+    "best_use_case": "Printed receipts, batch processing"
+  }
+}

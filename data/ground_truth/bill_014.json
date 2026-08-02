@@ -1,0 +1,13 @@
+{
+  "image_name": "bill_014.jpg",
+  "vendor_name": "Durga Kirana",
+  "invoice_number": "INV-7063-573",
+  "date": "01/08/2026",
+  "total_amount": 1159.94,
+  "currency": "INR",
+  "gst_amount": 176.94,
+  "gst_rate": 18,
+  "items_count": 5,
+  "payment_method": "UPI",
+  "source": "synthetic_handwritten"
+}

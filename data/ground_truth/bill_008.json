@@ -1,0 +1,13 @@
+{
+  "image_name": "bill_008.jpg",
+  "vendor_name": "Vinayak Stores",
+  "invoice_number": "INV-5824-446",
+  "date": "01/08/2026",
+  "total_amount": 1130.85,
+  "currency": "INR",
+  "gst_amount": 53.85,
+  "gst_rate": 5,
+  "items_count": 6,
+  "payment_method": "UPI",
+  "source": "synthetic_handwritten"
+}

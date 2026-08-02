@@ -1,0 +1,1017 @@
+{
+  "total_images": 15,
+  "successful_extractions": 15,
+  "overall_accuracy": 0.41904761904761906,
+  "field_accuracies": {
+    "vendor_name": 1.0,
+    "invoice_number": 0.06666666666666667,
+    "date": 0.6,
+    "total_amount": 0.0,
+    "currency": 1.0,
+    "gst_amount": 0.2,
+    "gst_rate": 0.06666666666666667
+  },
+  "field_correct_counts": {
+    "vendor_name": 15,
+    "invoice_number": 1,
+    "date": 9,
+    "total_amount": 0,
+    "currency": 15,
+    "gst_amount": 3,
+    "gst_rate": 1
+  },
+  "total_correct": 44,
+  "total_fields": 105,
+  "per_image_results": [
+    {
+      "image_name": "bill_001.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Sai Electronics",
+          "predicted": "SAIELECTRONICS",
+          "exact_match": false,
+          "fuzzy_score": 97,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-4067-205",
+          "predicted": "INV-4087-206",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "27/07/2026",
+          "predicted": "27/07/2028",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 673.28,
+          "predicted": 873.28,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 147.28,
+          "predicted": 526.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 28,
+          "predicted": 12,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.2857142857142857,
+      "fields_correct": 2,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_002.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Shri Ram Stores",
+          "predicted": "SHRI RAM STORES",
+          "exact_match": true,
+          "fuzzy_score": 100,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-5058-413",
+          "predicted": "INV-S068-418",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "18/07/2026",
+          "predicted": "18/07/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 853.0,
+          "predicted": 363.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 0.0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.42857142857142855,
+      "fields_correct": 3,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_003.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Sai Mart",
+          "predicted": "SAIMART",
+          "exact_match": false,
+          "fuzzy_score": 93,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-9922-523",
+          "predicted": "INV-8922-628",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "07/07/2026",
+          "predicted": "07/07/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 481.28,
+          "predicted": 376.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 105.28,
+          "predicted": 106.28,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 28,
+          "predicted": 2,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.42857142857142855,
+      "fields_correct": 3,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_004.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Selvi Bakery",
+          "predicted": "SELVIBAKERY",
+          "exact_match": false,
+          "fuzzy_score": 96,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-2034-997",
+          "predicted": "INV-2084997",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "16/07/2026",
+          "predicted": "16/07/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 376.42,
+          "predicted": 78.42,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 57.42,
+          "predicted": 57.42,
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 18,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.5714285714285714,
+      "fields_correct": 4,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_005.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Mohan & Sons",
+          "predicted": "MOHAN @ SONS",
+          "exact_match": false,
+          "fuzzy_score": 92,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-7293-401",
+          "predicted": "INV-7289-401",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "21/07/2026",
+          "predicted": "21/07/2028",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 235.2,
+          "predicted": 236.2,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 25.2,
+          "predicted": 236.2,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 12,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.2857142857142857,
+      "fields_correct": 2,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_006.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Krishna General Store",
+          "predicted": "KRISHNAGENERAL STORE",
+          "exact_match": false,
+          "fuzzy_score": 98,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-9352-218",
+          "predicted": "INV-8S62-218",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "06/07/2026",
+          "predicted": "08/07/2028",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 760.0,
+          "predicted": 3760.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 0.0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.2857142857142857,
+      "fields_correct": 2,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_007.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Laxmi General Store",
+          "predicted": "LAXMI GENERAL STORE",
+          "exact_match": true,
+          "fuzzy_score": 100,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-2291-259",
+          "predicted": "INV-2281-268",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "19/07/2026",
+          "predicted": "19/07/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 1509.0,
+          "predicted": 3160300.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 0.0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.42857142857142855,
+      "fields_correct": 3,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_008.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Vinayak Stores",
+          "predicted": "VINAYAK STORES",
+          "exact_match": true,
+          "fuzzy_score": 100,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-5824-446",
+          "predicted": "INV-E824-446",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "01/08/2026",
+          "predicted": "01/08/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 1130.85,
+          "predicted": 8119.08,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 53.85,
+          "predicted": 53.86,
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 5,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.5714285714285714,
+      "fields_correct": 4,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_009.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Priya Supermarket",
+          "predicted": "PRIYA SUPERMARKET",
+          "exact_match": true,
+          "fuzzy_score": 100,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-8165-557",
+          "predicted": "INV8 186-667",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "25/07/2026",
+          "predicted": "26/07/2028",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 1044.0,
+          "predicted": 3104400.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 0.0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.2857142857142857,
+      "fields_correct": 2,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_010.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Durga Kirana",
+          "predicted": "DURGAKIRANA",
+          "exact_match": false,
+          "fuzzy_score": 96,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-1057-833",
+          "predicted": "INV-1087-888",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "18/07/2026",
+          "predicted": "18/07/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 525.0,
+          "predicted": 52600.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 0.0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.42857142857142855,
+      "fields_correct": 3,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_011.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Sai Mart",
+          "predicted": "SAIMART",
+          "exact_match": false,
+          "fuzzy_score": 93,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-7817-691",
+          "predicted": "INV-7817-691",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "30/07/2026",
+          "predicted": "30/07/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 468.48,
+          "predicted": 68.48,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 102.48,
+          "predicted": 102.48,
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 28,
+          "predicted": 12,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.7142857142857143,
+      "fields_correct": 5,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_012.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Sai Electronics",
+          "predicted": "SAIELECTRONICS",
+          "exact_match": false,
+          "fuzzy_score": 97,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-5589-774",
+          "predicted": "INV-568.-774",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "17/07/2026",
+          "predicted": "17/07/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 358.4,
+          "predicted": 3368.4,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 38.4,
+          "predicted": 838.4,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 12,
+          "predicted": 12,
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        }
+      },
+      "accuracy": 0.5714285714285714,
+      "fields_correct": 4,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_013.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Durga Kirana",
+          "predicted": "DUPGAKIRANA",
+          "exact_match": false,
+          "fuzzy_score": 87,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-6296-111",
+          "predicted": "INV-8206-111",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "29/07/2026",
+          "predicted": "02/07/2028",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 745.76,
+          "predicted": 74.67,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 113.76,
+          "predicted": 0.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 18,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.2857142857142857,
+      "fields_correct": 2,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_014.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Durga Kirana",
+          "predicted": "DURGAKIRANA",
+          "exact_match": false,
+          "fuzzy_score": 96,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-7063-573",
+          "predicted": "INV-7088.673",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "01/08/2026",
+          "predicted": "01/08/2026",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 1159.94,
+          "predicted": 16994.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 176.94,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 18,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.42857142857142855,
+      "fields_correct": 3,
+      "fields_total": 7,
+      "success": true
+    },
+    {
+      "image_name": "bill_015.jpg",
+      "error": null,
+      "field_results": {
+        "vendor_name": {
+          "field": "vendor_name",
+          "ground_truth": "Selvi Bakery",
+          "predicted": "SELVIBAKERY",
+          "exact_match": false,
+          "fuzzy_score": 96,
+          "correct": true
+        },
+        "invoice_number": {
+          "field": "invoice_number",
+          "ground_truth": "INV-3410-812",
+          "predicted": "INV-3410812",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "date": {
+          "field": "date",
+          "ground_truth": "09/07/2026",
+          "predicted": "09/07/2028",
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "total_amount": {
+          "field": "total_amount",
+          "ground_truth": 538.0,
+          "predicted": 632.0,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "currency": {
+          "field": "currency",
+          "ground_truth": "INR",
+          "predicted": "INR",
+          "exact_match": true,
+          "fuzzy_score": 100.0,
+          "correct": true
+        },
+        "gst_amount": {
+          "field": "gst_amount",
+          "ground_truth": 0.0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        },
+        "gst_rate": {
+          "field": "gst_rate",
+          "ground_truth": 0,
+          "predicted": null,
+          "exact_match": false,
+          "fuzzy_score": 0.0,
+          "correct": false
+        }
+      },
+      "accuracy": 0.2857142857142857,
+      "fields_correct": 2,
+      "fields_total": 7,
+      "success": true
+    }
+  ]
+}
