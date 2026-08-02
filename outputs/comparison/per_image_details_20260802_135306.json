@@ -1,0 +1,347 @@
+{
+  "bill_001.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "SAIELECTRONICS",
+        "invoice_number": "INV-4087-206",
+        "date": "27/07/2028",
+        "total_amount": 873.28,
+        "currency": "INR",
+        "gst_amount": 347.28,
+        "gst_rate": 12
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "SAIELECTRONICS",
+        "invoice_number": "INV-4087-206",
+        "date": "27/07/2028",
+        "total_amount": 873.28,
+        "currency": "INR",
+        "gst_amount": 526.0,
+        "gst_rate": 12
+      }
+    }
+  },
+  "bill_002.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "SHRI RAM STORES",
+        "invoice_number": "INV-S068-418",
+        "date": "18/07/2026",
+        "total_amount": 363.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "SHRI RAM STORES",
+        "invoice_number": "INV-S068-418",
+        "date": "18/07/2026",
+        "total_amount": 363.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_003.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "SAIMART",
+        "invoice_number": "INV-8922-628",
+        "date": "07/07/2026",
+        "total_amount": 1528.28,
+        "currency": "INR",
+        "gst_amount": 106.28,
+        "gst_rate": 2
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "SAIMART",
+        "invoice_number": "INV-8922-628",
+        "date": "07/07/2026",
+        "total_amount": 376.0,
+        "currency": "INR",
+        "gst_amount": 106.28,
+        "gst_rate": 2
+      }
+    }
+  },
+  "bill_004.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "SELVIBAKERY",
+        "invoice_number": "INV-2084997",
+        "date": "16/07/2026",
+        "total_amount": 1078.42,
+        "currency": "INR",
+        "gst_amount": 57.42,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "SELVIBAKERY",
+        "invoice_number": "INV-2084997",
+        "date": "16/07/2026",
+        "total_amount": 78.42,
+        "currency": "INR",
+        "gst_amount": 57.42,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_005.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "MOHAN @ SONS",
+        "invoice_number": "INV-7289-401",
+        "date": "21/07/2028",
+        "total_amount": 236.2,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "MOHAN @ SONS",
+        "invoice_number": "INV-7289-401",
+        "date": "21/07/2028",
+        "total_amount": 236.2,
+        "currency": "INR",
+        "gst_amount": 236.2,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_006.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "KRISHNA GENERAL STORE",
+        "invoice_number": "INV-8S62-218",
+        "date": "08/07/2028",
+        "total_amount": 3760.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "KRISHNAGENERAL STORE",
+        "invoice_number": "INV-8S62-218",
+        "date": "08/07/2028",
+        "total_amount": 3760.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_007.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "LAXMI GENERAL STORE",
+        "invoice_number": "INV-2281-268",
+        "date": "19/07/2026",
+        "total_amount": 1603.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "LAXMI GENERAL STORE",
+        "invoice_number": "INV-2281-268",
+        "date": "19/07/2026",
+        "total_amount": 3160300.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_008.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "VINAYAK STORES",
+        "invoice_number": "INV-E824-446",
+        "date": "01/08/2026",
+        "total_amount": 1130.86,
+        "currency": "INR",
+        "gst_amount": 53.86,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "VINAYAK STORES",
+        "invoice_number": "INV-E824-446",
+        "date": "01/08/2026",
+        "total_amount": 8119.08,
+        "currency": "INR",
+        "gst_amount": 53.86,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_009.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "PRIYA SUPERMARKET",
+        "invoice_number": "INV8 186-667",
+        "date": "26/07/2028",
+        "total_amount": 104.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "PRIYA SUPERMARKET",
+        "invoice_number": "INV8 186-667",
+        "date": "26/07/2028",
+        "total_amount": 3104400.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_010.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "DURGAKIRANA",
+        "invoice_number": "INV-1087-888",
+        "date": "18/07/2026",
+        "total_amount": 526.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "DURGAKIRANA",
+        "invoice_number": "INV-1087-888",
+        "date": "18/07/2026",
+        "total_amount": 52600.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_011.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "SAIMART",
+        "invoice_number": "INV-7817-691",
+        "date": "30/07/2026",
+        "total_amount": 468.48,
+        "currency": "INR",
+        "gst_amount": 102.48,
+        "gst_rate": 12
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "SAIMART",
+        "invoice_number": "INV-7817-691",
+        "date": "30/07/2026",
+        "total_amount": 68.48,
+        "currency": "INR",
+        "gst_amount": 102.48,
+        "gst_rate": 12
+      }
+    }
+  },
+  "bill_012.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "SAIELECTRONICS",
+        "invoice_number": "INV-568-774",
+        "date": "17/07/2026",
+        "total_amount": 3368.4,
+        "currency": "INR",
+        "gst_amount": 838.4,
+        "gst_rate": 12
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "SAIELECTRONICS",
+        "invoice_number": "INV-568.-774",
+        "date": "17/07/2026",
+        "total_amount": 3368.4,
+        "currency": "INR",
+        "gst_amount": 838.4,
+        "gst_rate": 12
+      }
+    }
+  },
+  "bill_013.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "DUPGAKIRANA",
+        "invoice_number": "INV-8206-111",
+        "date": "02/07/2028",
+        "total_amount": 746.76,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "DUPGAKIRANA",
+        "invoice_number": "INV-8206-111",
+        "date": "02/07/2028",
+        "total_amount": 74.67,
+        "currency": "INR",
+        "gst_amount": 0.0,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_014.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "DURGAKIRANA",
+        "invoice_number": "INV-7088.673",
+        "date": "01/08/2026",
+        "total_amount": 116.94,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "DURGAKIRANA",
+        "invoice_number": "INV-7088.673",
+        "date": "01/08/2026",
+        "total_amount": 16994.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      }
+    }
+  },
+  "bill_015.jpg": {
+    "ground_truth": {},
+    "models": {
+      "llama-3.3-70b-versatile": {
+        "vendor_name": "SELVIBAKERY",
+        "invoice_number": "INV-3410812",
+        "date": "09/07/2028",
+        "total_amount": 632.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      },
+      "llama-3.1-8b-instant": {
+        "vendor_name": "SELVIBAKERY",
+        "invoice_number": "INV-3410812",
+        "date": "09/07/2028",
+        "total_amount": 632.0,
+        "currency": "INR",
+        "gst_amount": null,
+        "gst_rate": null
+      }
+    }
+  }
+}

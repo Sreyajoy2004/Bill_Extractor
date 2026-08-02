@@ -69,16 +69,16 @@ class Config:
         },
         # Anthropic Models
         "claude-haiku": {
-            "name": "claude-3-haiku-20240307",
+            "name": "claude-3-5-haiku-20241022",
             "provider": "anthropic",
             "cost_per_1k_tokens": 0.00025,
-            "description": "Anthropic Claude 3 Haiku - Fast and cheap"
+            "description": "Anthropic Claude 3.5 Haiku - Fast and cheap"
         },
         "claude-sonnet": {
-            "name": "claude-3-sonnet-20240229",
+            "name": "claude-3-5-sonnet-20241022",
             "provider": "anthropic",
             "cost_per_1k_tokens": 0.005,
-            "description": "Anthropic Claude 3 Sonnet - Balanced"
+            "description": "Anthropic Claude 3.5 Sonnet - Balanced"
         },
         "claude-opus": {
             "name": "claude-3-opus-20240229",

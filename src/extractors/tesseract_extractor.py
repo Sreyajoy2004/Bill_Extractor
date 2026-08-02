@@ -146,7 +146,7 @@ class TesseractExtractor:
         try:
             # Extract raw text
             raw_text = self.extract_text(image_path)
-            result['raw_text'] = raw_text[:500] + '...' if len(raw_text) > 500 else raw_text
+            result['raw_text'] = raw_text
             
             if not raw_text or len(raw_text) < 10:
                 result['error'] = 'No text extracted from image'

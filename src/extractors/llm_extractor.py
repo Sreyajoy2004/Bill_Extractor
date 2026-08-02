@@ -380,46 +380,44 @@ Example:
     
     def _parse_response(self, response_text: str) -> Dict[str, Any]:
         """Parse the LLM response into a structured format"""
+        import re
+
+        # Normalise common LLM quirks before parsing
+        cleaned = response_text.strip()
+        # Strip markdown code fences
+        cleaned = re.sub(r'^```(?:json)?\s*', '', cleaned, flags=re.IGNORECASE)
+        cleaned = re.sub(r'\s*```$', '', cleaned)
+        # Replace bare NULL / True / False with JSON-valid equivalents
+        cleaned = re.sub(r':\s*NULL\b', ': null', cleaned)
+        cleaned = re.sub(r':\s*True\b', ': true', cleaned)
+        cleaned = re.sub(r':\s*False\b', ': false', cleaned)
+
         try:
-            # Try to extract JSON from the response
-            import re
-            
-            # Find JSON-like content between curly braces
-            json_match = re.search(r'\{.*\}', response_text, re.DOTALL)
+            json_match = re.search(r'\{.*\}', cleaned, re.DOTALL)
             if json_match:
-                json_str = json_match.group()
-                data = json.loads(json_str)
+                data = json.loads(json_match.group())
             else:
-                # If no JSON found, try to parse the whole response
-                data = json.loads(response_text)
-            
-            # Ensure all fields exist
+                data = json.loads(cleaned)
+
             expected_fields = [
-                "vendor_name", "invoice_number", "date", 
+                "vendor_name", "invoice_number", "date",
                 "total_amount", "currency", "gst_amount", "gst_rate"
             ]
-            
             for field in expected_fields:
                 if field not in data:
                     data[field] = None
-            
-            # Clean up amounts
-            if data.get("total_amount"):
-                try:
-                    data["total_amount"] = float(data["total_amount"])
-                except:
-                    data["total_amount"] = None
-            
-            if data.get("gst_amount"):
-                try:
-                    data["gst_amount"] = float(data["gst_amount"])
-                except:
-                    data["gst_amount"] = None
-            
+
+            for amt_field in ("total_amount", "gst_amount", "gst_rate"):
+                if data.get(amt_field) is not None:
+                    try:
+                        data[amt_field] = float(data[amt_field])
+                    except (TypeError, ValueError):
+                        data[amt_field] = None
+
             return data
-            
+
         except Exception as e:
-            raise Exception(f"Failed to parse response: {str(e)}\nResponse: {response_text[:200]}")
+            raise Exception(f"Failed to parse response: {str(e)}\nResponse: {response_text[:300]}")
     
     def calculate_cost(self) -> float:
         """Calculate the cost based on token usage"""

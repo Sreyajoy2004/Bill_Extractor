@@ -221,13 +221,27 @@ def generate_comparison_report(all_results: List[Dict[str, Any]], timestamp: str
 
 
 def generate_per_image_report(all_results: List[Dict[str, Any]], timestamp: str) -> Dict[str, Any]:
+    from src.evaluation.evaluator import BillEvaluator
+    evaluator = BillEvaluator(ground_truth_dir=str(Config.GROUND_TRUTH_DIR))
     images = {}
     for res in all_results:
         model_name = res["model_name"]
         for result in res["results"]:
             img_name = result.get("image_name", result.get("image_path", "unknown"))
             if img_name not in images:
-                images[img_name] = {"ground_truth": {}, "models": {}}
+                gt = evaluator.load_ground_truth(img_name)
+                gt_data = {}
+                if gt:
+                    gt_data = {
+                        "vendor_name": gt.get("vendor_name"),
+                        "invoice_number": gt.get("invoice_number"),
+                        "date": gt.get("date"),
+                        "total_amount": gt.get("total_amount"),
+                        "currency": gt.get("currency"),
+                        "gst_amount": gt.get("gst_amount"),
+                        "gst_rate": gt.get("gst_rate")
+                    }
+                images[img_name] = {"ground_truth": gt_data, "models": {}}
             
             if result.get("success") and result.get("extracted_data"):
                 pred = result["extracted_data"]
@@ -267,24 +281,25 @@ def push_to_zoho(all_results: List[Dict[str, Any]], timestamp: str) -> Dict[str,
             vendor = data.get("vendor_name")
             amount = data.get("total_amount")
             if vendor and amount:
-                try:
-                    expense = zoho.create_expense(
-                        vendor_name=vendor,
-                        amount=float(amount),
-                        currency=data.get("currency", "INR"),
-                        date=data.get("date"),
-                        reference_number=data.get("invoice_number")
-                    )
+                expense = zoho.create_expense(
+                    vendor_name=vendor,
+                    amount=float(amount),
+                    currency=data.get("currency", "INR"),
+                    date=data.get("date"),
+                    reference_number=data.get("invoice_number")
+                )
+                if expense.get("expense_id") and not expense.get("error"):
                     pushed.append({
                         "image": result.get("image_name"),
                         "expense_id": expense.get("expense_id"),
                         "vendor": vendor,
                         "amount": amount
                     })
-                except Exception as e:
+                else:
                     pushed.append({
                         "image": result.get("image_name"),
-                        "error": str(e)[:100]
+                        "error": expense.get("error", "Unknown error"),
+                        "status": expense.get("status", "failed")
                     })
     
     zoho_file = ZOHO_DIR / f"zoho_expenses_{timestamp}.json"
